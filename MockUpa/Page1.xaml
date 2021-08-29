@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MockUpa.Page1">
+    <Grid RowDefinitions="90, auto" ColumnDefinitions="1*, 2*" Margin="96">
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Wybierz zwierzę:" HorizontalOptions="CenterAndExpand" Margin="8" FontFamily="Open Sans" FontSize="36" TextDecorations="Underline" TextColor="Black"/>
+        <StackLayout Grid.Column="0" Grid.Row="1" Spacing="32" Margin="8">
+            <Button x:Name="button1" IsEnabled="False" FontSize="20" Padding="20" Text="Proszę, pokaż..." BackgroundColor="Gray" TextColor="Black" Margin="16, 16, 16, 0"></Button>
+            <Button x:Name="button2" IsEnabled="False" FontSize="20" Padding="20" Text="Masz pokazać..." BackgroundColor="Gray"  TextColor="Black" Margin="16, 16, 16, 0"></Button>
+            <Button x:Name="button3" IsEnabled="False" FontSize="20" Padding="20" Text="Pokaż..." BackgroundColor="Gray"  TextColor="Black" Margin="16, 16, 16, 0"></Button>
+            <Button x:Name="button4" IsEnabled="False" FontSize="20" Padding="20" Text="Czy mógłbyś pokazać..." BackgroundColor="Gray"  TextColor="Black" Margin="16, 16, 16, 0" ></Button>
+        </StackLayout>
+        <Grid Grid.Column="1" Grid.Row="1" RowDefinitions="*, *" ColumnDefinitions="*, *">
+            <Image Grid.Column="0" Grid.Row="0" Source="doga.png" VerticalOptions="FillAndExpand"></Image>
+            <Image Grid.Column="1" Grid.Row="0" Source="goril.png" VerticalOptions="FillAndExpand"></Image>
+            <Image Grid.Column="0" Grid.Row="1" Source="lion.png" VerticalOptions="FillAndExpand"></Image>
+            <Image Grid.Column="1" Grid.Row="1" Source="elephant.png" VerticalOptions="FillAndExpand"></Image>
+        </Grid>
+    </Grid>
+</ContentPage>

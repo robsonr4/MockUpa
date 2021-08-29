@@ -7,28 +7,16 @@
     <Grid RowDefinitions="90, auto" ColumnDefinitions="1*, 2*" Margin="96">
         <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Wybierz zwrot do robota:" HorizontalOptions="CenterAndExpand" Margin="8" FontFamily="Roboto" FontSize="36" TextDecorations="Underline" TextColor="Black"/>
         <StackLayout Grid.Column="0" Grid.Row="1" Spacing="32" Margin="8">
-            <Button FontSize="20" Padding="20" Text="Proszę, pokaż..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" ></Button>
-            <Button FontSize="20" Padding="20" Text="Masz pokazać..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0"></Button>
-            <Button FontSize="20" Padding="20" Text="Pokaż..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0"></Button>
-            <Button FontSize="20" Padding="20" Text="Czy mógłbyś pokazać..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0"></Button>
+            <Button x:Name="button1" FontSize="20" Padding="20" Text="Proszę, pokaż..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="Button_Clicked"></Button>
+            <Button x:Name="button2" FontSize="20" Padding="20" Text="Masz pokazać..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="Button_Clicked"></Button>
+            <Button x:Name="button3" FontSize="20" Padding="20" Text="Pokaż..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="Button_Clicked"></Button>
+            <Button x:Name="button4" FontSize="20" Padding="20" Text="Czy mógłbyś pokazać..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="Button_Clicked"></Button>
         </StackLayout>
-        <Grid Grid.Column="1" Grid.Row="1" RowDefinitions="200, 200" ColumnDefinitions="250, 250">
-            <StackLayout Grid.Column="0" Grid.Row="0">
-                <Image Source="doga.png" VerticalOptions="FillAndExpand"></Image>
-                <Button FontSize="20" Padding="10" Text="Proszę, pokaż..." BackgroundColor="#E5F961" TextColor="Black"></Button>
-            </StackLayout>
-            <StackLayout Grid.Column="1" Grid.Row="0">
-                <Image Source="goril.png" VerticalOptions="FillAndExpand"></Image>
-                <Button FontSize="20" Padding="10" Text="Proszę, pokaż..." BackgroundColor="#E5F961" TextColor="Black"></Button>
-            </StackLayout>
-            <StackLayout Grid.Column="0" Grid.Row="1">
-                <Image Source="lion.png" VerticalOptions="FillAndExpand"></Image>
-                <Button FontSize="20" Padding="10" Text="Proszę, pokaż..." BackgroundColor="#E5F961" TextColor="Black"></Button>
-            </StackLayout>
-            <StackLayout Grid.Column="1" Grid.Row="1">
-                <Image Source="elephant.png" VerticalOptions="FillAndExpand"></Image>
-                <Button FontSize="20" Padding="10" Text="Proszę, pokaż..." BackgroundColor="#E5F961" TextColor="Black"></Button>
-            </StackLayout>
+        <Grid Grid.Column="1" Grid.Row="1" RowDefinitions="*, *" ColumnDefinitions="*, *">
+            <Image Grid.Column="0" Grid.Row="0" Source="doga.png" VerticalOptions="FillAndExpand"></Image>
+            <Image Grid.Column="1" Grid.Row="0" Source="goril.png" VerticalOptions="FillAndExpand"></Image>
+            <Image Grid.Column="0" Grid.Row="1" Source="lion.png" VerticalOptions="FillAndExpand"></Image>
+            <Image Grid.Column="1" Grid.Row="1" Source="elephant.png" VerticalOptions="FillAndExpand"></Image>
         </Grid>
     </Grid>
 </ContentPage>
