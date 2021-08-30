@@ -12,6 +12,12 @@ namespace MockUpa
         public MainPage()
         {
             InitializeComponent();
+            Random rnd = new Random();
+            int[] arr = Enumerable.Range(0, 4).OrderBy(c => rnd.Next()).ToArray();
+            Grid.SetRow(button1, arr[0]);
+            Grid.SetRow(button2, arr[1]);
+            Grid.SetRow(button3, arr[2]);
+            Grid.SetRow(button4, arr[3]);
         }
 
         void Button_Clicked(object sender, EventArgs e)
@@ -33,11 +39,12 @@ namespace MockUpa
             imagButton2.BackgroundColor = Color.FromHex("#E5F961");
             imagButton3.BackgroundColor = Color.FromHex("#E5F961");
             imagButton4.BackgroundColor = Color.FromHex("#E5F961");
+            polecenie.Text = "Wybierz zwierzę:";
         }
 
         private void dalej_Clicked(object sender, EventArgs e)
         {
-
+            App.Current.MainPage = new Page4();
         }
 
         bool imageChoosen = false;

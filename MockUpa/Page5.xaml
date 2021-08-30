@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MockUpa.Page5"
+             BackgroundImage="background.png">
+
+    <Label Text="Dziękujemy. Po przeliczeniu głosów Pepper uda 3 najbardziej popularne zwierzaki." VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="282" HorizontalTextAlignment="Center" FontFamily="Roboto" FontSize="36" TextColor="Black"/>
+</ContentPage>

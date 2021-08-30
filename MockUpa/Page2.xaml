@@ -6,7 +6,7 @@
     <Grid RowDefinitions="90, *, 90" ColumnDefinitions="*, *" Margin="96">
         <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Jestem..." HorizontalOptions="CenterAndExpand" Margin="8" FontFamily="Roboto" FontSize="36" TextDecorations="Underline" TextColor="Black"/>
         <Button x:Name="dziewczynka" Grid.Column="0" Grid.Row="1" FontSize="36" Text="Dziewczynką" BackgroundColor="#FF00A0" TextColor="Black" Margin="16, 16, 16, 0" Clicked="dziewczynka_Clicked"/>
-        <Button x:Name="chlopiec" Grid.Column="1" Grid.Row="1" FontSize="36" Text="Chłopcem" BackgroundColor="#00B9FF" TextColor="Black" Margin="16, 16, 16, 0" Clicked="chlopiec_Clicked"/>
-        <Button x:Name="dalej" Grid.Column="1" Grid.Row="2" FontSize="20" Text="Dalej" BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="dalej_Clicked"/>
+        <Button x:Name="chlopiec" Grid.Column="1" Grid.Row="1" FontSize="36" Text="Chłopcem" BackgroundColor="DodgerBlue" TextColor="Black" Margin="16, 16, 16, 0" Clicked="chlopiec_Clicked"/>
+        <Button x:Name="dalej" IsEnabled="False" Grid.Column="1" Grid.Row="2" FontSize="20" Text="Dalej" BackgroundColor="Gray" TextColor="Black" Margin="16, 16, 16, 0" Clicked="dalej_Clicked"/>
     </Grid>
 </ContentPage> 
