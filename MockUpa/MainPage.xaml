@@ -4,19 +4,20 @@
              x:Class="MockUpa.MainPage"
              BackgroundImage="background.png">
 
-    <Grid RowDefinitions="90, auto" ColumnDefinitions="1*, 2*" Margin="96">
-        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Wybierz zwrot do robota:" HorizontalOptions="CenterAndExpand" Margin="8" FontFamily="Roboto" FontSize="36" TextDecorations="Underline" TextColor="Black"/>
+    <Grid RowDefinitions="90, auto, 60" ColumnDefinitions="2*, 2*, 1*" Margin="96,48">
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Wybierz zwrot do robota:" HorizontalOptions="CenterAndExpand" Margin="8" FontFamily="Roboto" FontSize="36" TextDecorations="Underline" TextColor="Black"/>
         <StackLayout Grid.Column="0" Grid.Row="1" Spacing="32" Margin="8">
-            <Button x:Name="button1" FontSize="20" Padding="20" Text="Proszę, pokaż..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="Button_Clicked"></Button>
-            <Button x:Name="button2" FontSize="20" Padding="20" Text="Masz pokazać..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="Button_Clicked"></Button>
-            <Button x:Name="button3" FontSize="20" Padding="20" Text="Pokaż..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="Button_Clicked"></Button>
-            <Button x:Name="button4" FontSize="20" Padding="20" Text="Czy mógłbyś pokazać..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="Button_Clicked"></Button>
+            <Button x:Name="button1" IsEnabled="True" FontSize="20" Padding="20" Text="Proszę, pokaż..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="Button_Clicked"></Button>
+            <Button x:Name="button2" IsEnabled="True" FontSize="20" Padding="20" Text="Masz pokazać..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="Button_Clicked"></Button>
+            <Button x:Name="button3" IsEnabled="True" FontSize="20" Padding="20" Text="Pokaż..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="Button_Clicked"></Button>
+            <Button x:Name="button4" IsEnabled="True" FontSize="20" Padding="20" Text="Czy mógłbyś pokazać..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="Button_Clicked"></Button>
         </StackLayout>
-        <Grid Grid.Column="1" Grid.Row="1" RowDefinitions="*, *" ColumnDefinitions="*, *">
-            <Image Grid.Column="0" Grid.Row="0" Source="doga.png" VerticalOptions="FillAndExpand"></Image>
-            <Image Grid.Column="1" Grid.Row="0" Source="goril.png" VerticalOptions="FillAndExpand"></Image>
-            <Image Grid.Column="0" Grid.Row="1" Source="lion.png" VerticalOptions="FillAndExpand"></Image>
-            <Image Grid.Column="1" Grid.Row="1" Source="elephant.png" VerticalOptions="FillAndExpand"></Image>
+        <Grid Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" RowDefinitions="*, *" ColumnDefinitions="*, *">
+            <ImageButton x:Name="imagButton1" IsEnabled="False" Grid.Column="0" Grid.Row="0" Source="doga.png" VerticalOptions="FillAndExpand" Clicked="imagButton_Clicked"></ImageButton>
+            <ImageButton x:Name="imagButton2" IsEnabled="False" Grid.Column="1" Grid.Row="0" Source="goril.png" VerticalOptions="FillAndExpand" Clicked="imagButton_Clicked"></ImageButton>
+            <ImageButton x:Name="imagButton3" IsEnabled="False" Grid.Column="0" Grid.Row="1" Source="lion.png" VerticalOptions="FillAndExpand" Clicked="imagButton_Clicked"></ImageButton>
+            <ImageButton x:Name="imagButton4" IsEnabled="False" Grid.Column="1" Grid.Row="1" Source="elephant.png" VerticalOptions="FillAndExpand" Clicked="imagButton_Clicked"></ImageButton>
         </Grid>
+        <Button x:Name="dalej" IsEnabled="False" Grid.Column="2" Grid.Row="2" FontSize="20" Text="Dalej" BackgroundColor="Gray" TextColor="Black" Clicked="dalej_Clicked"/>
     </Grid>
 </ContentPage>

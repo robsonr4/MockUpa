@@ -10,7 +10,7 @@ namespace MockUpa
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Page3();
         }
 
         protected override void OnStart()

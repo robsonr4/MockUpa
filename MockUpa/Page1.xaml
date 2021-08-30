@@ -11,10 +11,10 @@
             <Button x:Name="button4" IsEnabled="False" FontSize="20" Padding="20" Text="Czy mógłbyś pokazać..." BackgroundColor="Gray"  TextColor="Black" Margin="16, 16, 16, 0" ></Button>
         </StackLayout>
         <Grid Grid.Column="1" Grid.Row="1" RowDefinitions="*, *" ColumnDefinitions="*, *">
-            <Image Grid.Column="0" Grid.Row="0" Source="doga.png" VerticalOptions="FillAndExpand"></Image>
-            <Image Grid.Column="1" Grid.Row="0" Source="goril.png" VerticalOptions="FillAndExpand"></Image>
-            <Image Grid.Column="0" Grid.Row="1" Source="lion.png" VerticalOptions="FillAndExpand"></Image>
-            <Image Grid.Column="1" Grid.Row="1" Source="elephant.png" VerticalOptions="FillAndExpand"></Image>
+            <ImageButton x:Name="imagButton1" IsEnabled="False" Grid.Column="0" Grid.Row="0" Source="doga.png" VerticalOptions="FillAndExpand"></ImageButton>
+            <ImageButton x:Name="imagButton2" IsEnabled="False" Grid.Column="1" Grid.Row="0" Source="goril.png" VerticalOptions="FillAndExpand"></ImageButton>
+            <ImageButton x:Name="imagButton3" IsEnabled="False" Grid.Column="0" Grid.Row="1" Source="lion.png" VerticalOptions="FillAndExpand"></ImageButton>
+            <ImageButton x:Name="imagButton4" IsEnabled="False" Grid.Column="1" Grid.Row="1" Source="elephant.png" VerticalOptions="FillAndExpand"></ImageButton>
         </Grid>
     </Grid>
 </ContentPage>
