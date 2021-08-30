@@ -3,5 +3,5 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MockUpa.Page3"
              BackgroundImage="background.png">
-    <Button x:Name="dalej" FontSize="36" Text="Kliknij aby rozpocząć" BackgroundColor="#E5F961" TextColor="Black" Margin="354, 192" Clicked="dalej_Clicked"></Button>
+    <Button x:Name="dalej" FontSize="36" Text="Kliknij aby rozpocząć" BackgroundColor="#E5F961" TextColor="Black" Margin="354, 192" CornerRadius="8" Clicked="dalej_Clicked"></Button>
 </ContentPage> 

@@ -5,8 +5,8 @@
              BackgroundImage="background.png">
     <Grid ColumnDefinitions="1*, 1*" RowDefinitions="90, *, 90" Margin="96">
         <Label x:Name="polecenie"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Jak uważasz, czy robot może odmówić:" HorizontalOptions="CenterAndExpand" Margin="8" FontFamily="Roboto" FontSize="36" TextDecorations="Underline" TextColor="Black"/>
-        <Button x:Name="tak" Grid.Column="0" Grid.Row="1" FontSize="20" Padding="20" Text="Tak, może odmówić" BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="tak_Clicked"></Button>
-        <Button x:Name="nie" Grid.Column="1" Grid.Row="1" FontSize="20" Padding="20" Text="Nie, robot nie ma wyboru" BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="nie_Clicked"></Button>
-        <Button x:Name="dalej" IsEnabled="False" Grid.Column="1" Grid.Row="2" FontSize="20" Text="Dalej" BackgroundColor="Gray" TextColor="Black" Margin="16, 16, 16, 0" Clicked="dalej_Clicked"/>
+        <Button x:Name="tak" Grid.Column="0" Grid.Row="1" FontSize="20" Padding="20" Text="Tak, może odmówić" BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" CornerRadius="8" Clicked="tak_Clicked"></Button>
+        <Button x:Name="nie" Grid.Column="1" Grid.Row="1" FontSize="20" Padding="20" Text="Nie, robot nie ma wyboru" BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" CornerRadius="8" Clicked="nie_Clicked"></Button>
+        <Button x:Name="dalej" IsEnabled="False" Grid.Column="1" Grid.Row="2" FontSize="20" Text="Dalej" BackgroundColor="Gray" TextColor="Black" Margin="16, 16, 16, 0" CornerRadius="8" Clicked="dalej_Clicked"/>
     </Grid>
 </ContentPage>

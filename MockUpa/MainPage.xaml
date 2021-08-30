@@ -7,17 +7,17 @@
     <Grid RowDefinitions="90, 1*, 60" ColumnDefinitions="2*, 2*, 2*" Margin="96, 48, 96, 96">
         <Label x:Name="polecenie"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Wybierz zwrot do robota:" HorizontalOptions="CenterAndExpand" Margin="8" FontFamily="Roboto" FontSize="36" TextDecorations="Underline" TextColor="Black"/>
         <Grid x:Name="butonki" RowDefinitions="1*, 1*, 1*, 1*" ColumnDefinitions="*" Grid.Column="0" Grid.Row="1" Margin="8">
-            <Button x:Name="button1" IsEnabled="True" FontSize="20" Padding="20" Text="Proszę, pokaż..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="Button_Clicked"></Button>
-            <Button x:Name="button2" IsEnabled="True" FontSize="20" Padding="20" Text="Masz pokazać..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="Button_Clicked"></Button>
-            <Button x:Name="button3" IsEnabled="True" FontSize="20" Padding="20" Text="Pokaż..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="Button_Clicked"></Button>
-            <Button x:Name="button4" IsEnabled="True" FontSize="20" Padding="20" Text="Czy mógłbyś pokazać..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" Clicked="Button_Clicked"></Button>
+            <Button x:Name="button1" IsEnabled="True" FontSize="20" Padding="20" Text="Proszę, pokaż..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" CornerRadius="8" Clicked="Button_Clicked"></Button>
+            <Button x:Name="button2" IsEnabled="True" FontSize="20" Padding="20" Text="Masz pokazać..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" CornerRadius="8" Clicked="Button_Clicked"></Button>
+            <Button x:Name="button3" IsEnabled="True" FontSize="20" Padding="20" Text="Pokaż..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" CornerRadius="8" Clicked="Button_Clicked"></Button>
+            <Button x:Name="button4" IsEnabled="True" FontSize="20" Padding="20" Text="Czy mógłbyś pokazać..." BackgroundColor="#E5F961" TextColor="Black" Margin="16, 16, 16, 0" CornerRadius="8" Clicked="Button_Clicked"></Button>
         </Grid>
         <Grid Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" RowDefinitions="1*, 1*" ColumnDefinitions="1*, 1*">
-            <ImageButton x:Name="imagButton1" IsEnabled="False" Grid.Column="0" Grid.Row="0" Source="doga.png" VerticalOptions="FillAndExpand" Clicked="imagButton_Clicked"></ImageButton>
-            <ImageButton x:Name="imagButton2" IsEnabled="False" Grid.Column="1" Grid.Row="0" Source="goril.png" VerticalOptions="FillAndExpand" Clicked="imagButton_Clicked"></ImageButton>
-            <ImageButton x:Name="imagButton3" IsEnabled="False" Grid.Column="0" Grid.Row="1" Source="lion.png" VerticalOptions="FillAndExpand" Clicked="imagButton_Clicked"></ImageButton>
-            <ImageButton x:Name="imagButton4" IsEnabled="False" Grid.Column="1" Grid.Row="1" Source="elephant.png" VerticalOptions="FillAndExpand" Clicked="imagButton_Clicked"></ImageButton>
+            <ImageButton x:Name="imagButton1" IsEnabled="False" Grid.Column="0" Grid.Row="0" Source="doga.png" VerticalOptions="FillAndExpand" CornerRadius="8" Clicked="imagButton_Clicked"></ImageButton>
+            <ImageButton x:Name="imagButton2" IsEnabled="False" Grid.Column="1" Grid.Row="0" Source="goril.png" VerticalOptions="FillAndExpand" CornerRadius="8" Clicked="imagButton_Clicked"></ImageButton>
+            <ImageButton x:Name="imagButton3" IsEnabled="False" Grid.Column="0" Grid.Row="1" Source="lion.png" VerticalOptions="FillAndExpand" CornerRadius="8" Clicked="imagButton_Clicked"></ImageButton>
+            <ImageButton x:Name="imagButton4" IsEnabled="False" Grid.Column="1" Grid.Row="1" Source="elephant.png" VerticalOptions="FillAndExpand" CornerRadius="8" Clicked="imagButton_Clicked"></ImageButton>
         </Grid>
-        <Button x:Name="dalej" IsEnabled="False" Grid.Column="2" Grid.Row="2" FontSize="20" Text="Dalej" BackgroundColor="Gray" TextColor="Black" Clicked="dalej_Clicked"/>
+        <Button x:Name="dalej" IsEnabled="False" Grid.Column="2" Grid.Row="2" FontSize="20" Text="Dalej" BackgroundColor="Gray" TextColor="Black" CornerRadius="8" Clicked="dalej_Clicked"/>
     </Grid>
 </ContentPage>
